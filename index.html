@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+   
 </head>
     <body>
         <div class="titulo">
@@ -17,38 +18,52 @@
         </div>
 
         <div class="container_jugadores">
-            <div class="jugador1">
+            <div class="jugador1" id='jugador1'>
                 <h2 class="jugador1">
                     Jugador 1 = X
                 </h2>
             </div>
-            <div class="jugador2">
+            <div class="jugador2"  id='jugador2'>
                 <h2 class="jugador2">
                     Jugador 2 = O
                 </h2>
             </div>
+
+            
         </div>
 
+        <div id = 'ganador' class="ganador-oculto">
+            <div class="container-p">
+
+                <p id ='ganador-parrafo'class="ganador-p">
+                   
+                </p>
+            </div>
+        </div>
+        
+        <div class="container-comienza">
+            <button class="btn-comienza" id='comienza'>comienza</button>
+        </div>
         <div class="tablero">
-            
+          
             <div class="tablero-fila1 col">
-                <button class="tablero-fila1-col1 filas"></button>
-                <button class="tablero-fila1-col2 filas"></button>
-                <button class="tablero-fila1-col3 filas"></button>
+                <button class="tablero-fila1-col1 filas casilla" id="b0" onclick="colocar(this)"></button>
+                <button class="tablero-fila1-col2 filas casilla" id="b1" onclick="colocar(this)"></button>
+                <button class="tablero-fila1-col3 filas casilla" id="b2" onclick="colocar(this)"></button>
                 
             </div>
             <div class="tablero-fila2 col">
 
-                <button class="tablero-fila2-col1 filas"></button>
-                <button class="tablero-fila2-col2 filas"></button>
-                <button class="tablero-fila2-col3 filas"></button>
+                <button class="tablero-fila2-col1 filas casilla" id="b3" onclick="colocar(this)"></button>
+                <button class="tablero-fila2-col2 filas casilla" id="b4" onclick="colocar(this)"></button>
+                <button class="tablero-fila2-col3 filas casilla" id="b5" onclick="colocar(this)"></button>
 
             
             </div>
             <div class="tablero-fila3 col">
-                <button class="tablero-fila3-col1 filas"></button>
-                <button class="tablero-fila3-col2 filas"></button>
-                <button class="tablero-fila3-col3 filas"></button>
+                <button class="tablero-fila3-col1 filas casilla" id="b6" onclick="colocar(this)"></button>
+                <button class="tablero-fila3-col2 filas casilla" id="b7" onclick="colocar(this)"></button>
+                <button class="tablero-fila3-col3 filas casilla" id="b8" onclick="colocar(this)"></button>
 
             
             </div>
@@ -56,5 +71,7 @@
         <footer>
             <h1>TA TE TI 2021</h1>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
     </body>
 </html>
